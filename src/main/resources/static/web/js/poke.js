@@ -1,5 +1,5 @@
 const getDatos = async (id) => {
-const url = "https://myminipokedex.herokuapp.com/minipokeapi/" + id
+const url = "/minipokeapi/" + id
 
   try {
     const response = await fetch(url);
@@ -28,7 +28,7 @@ function inicioPagina() { //para obtener solo los 20 primeros pokemon en index
 
 const llenardatos = async (id) => {
 
-  const url = "https://myminipokedex.herokuapp.com/minipokeapi/" + id
+  const url = "/minipokeapi/" + id
 try {
     const response = await fetch(url);
     const datos = await response.json();
