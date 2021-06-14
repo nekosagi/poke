@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    background-color: #cd4e4c;
+}
+
+.hero-back {
+    background: rgb(34,195,188);
+    background: linear-gradient(56deg, rgba(34,195,188,1) 0%, rgba(253,45,45,1) 87%);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+section{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.card {
+    box-shadow: 2px 2px 25px;
+}
+
+img {
+    margin: 25px;
+    width: 15%;
+    align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    float: left;
+    margin: 15px;
+}
+
+h5 {
+    text-transform: uppercase;
+    text-align: center;
+}
