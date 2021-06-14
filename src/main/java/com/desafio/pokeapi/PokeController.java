@@ -5,6 +5,7 @@ import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,6 +18,11 @@ public class PokeController {
     @Autowired
     Pokeservice pServ;
     JSONParser parse = new JSONParser();
+
+    @RequestMapping("/")
+    public String welcome() {
+        return "index";
+    }
 
     @GetMapping("/minipokeapi/{pokeId}")
     public Pokemon getPoke(@PathVariable("pokeId") int pokeId) {
