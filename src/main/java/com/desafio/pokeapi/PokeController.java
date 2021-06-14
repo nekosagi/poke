@@ -37,6 +37,7 @@ public class PokeController {
         Pokemon poke = new Pokemon(id,name,type,weight,abilities,image);
 
         return poke;
+
     }
 }
 
