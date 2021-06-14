@@ -34,7 +34,7 @@ public class PokeController {
         List<String> abilities = JsonPath.read(prueba, "$.abilities..name");
         List<String> type = JsonPath.read(prueba, "$.types..name");
         String image = JsonPath.read(prueba, "$.sprites.other.official-artwork.front_default");
-        Pokemon poke = new Pokemon(id,name,abilities,weight,type,image);
+        Pokemon poke = new Pokemon(id,name,type,weight,abilities,image);
 
         return poke;
     }
