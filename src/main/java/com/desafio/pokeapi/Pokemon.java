@@ -16,10 +16,6 @@ public class Pokemon {
     public Pokemon() {
     }
 
-    public Pokemon(int id) {
-        this.id = id;
-    }
-
     public Pokemon(int id, String name, List<String> type, int weight, List<String> abilities, String image) {
         this.id = id;
         this.name = name;
@@ -27,6 +23,10 @@ public class Pokemon {
         this.weight = weight;
         this.abilities = abilities;
         this.image = image;
+    }
+
+    public Pokemon(int id) {
+        this.id = id;
     }
 
     public int getId() {

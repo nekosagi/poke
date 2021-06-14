@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 
+
+
 @Service
 public class Pokeservice {
 
@@ -17,5 +19,4 @@ public class Pokeservice {
         return this.webClient.get().uri("/{id}", id)
                 .retrieve().bodyToMono(String.class).block();
     }
-
 }
